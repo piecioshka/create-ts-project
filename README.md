@@ -1,4 +1,4 @@
-# typescript-playgroung
+# typescript-playground
 
 :hammer: TypeScript Playground with TSLint
 

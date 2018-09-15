@@ -1,6 +1,6 @@
 {
     "private": true,
-    "name": "typescript-playgroung",
+    "name": "typescript-playground",
     "description": "TypeScript Playground with TSLint",
     "version": "1.0.0",
     "license": "MIT",
@@ -24,6 +24,6 @@
     "devDependencies": {},
     "repository": {
         "type": "git",
-        "url": "git@github.com:piecioshka/typescript-playgroung.git"
+        "url": "git@github.com:piecioshka/typescript-playground.git"
     }
 }

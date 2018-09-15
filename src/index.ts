@@ -6,13 +6,11 @@ interface IMovie {
 // ----------------------------------------------
 
 const random = {
-    get name() {
-        return 'Fast & furious 9 (2020)';
-    }
+    name: 'Fast & furious 9 (2020)'
 };
 
 function displayMovie(movie: IMovie) {
     console.log(movie.name);
 }
 
-displayMovie( random );
+displayMovie( random as IMovie );
