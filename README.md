@@ -4,9 +4,9 @@
 
 ## Features
 
-* :checkered_flag: Execute TypeScript code (look at `src` directory)
-* :checkered_flag: Support TSLint (linter)
-* :checkered_flag: Disable some TSLint rules to quick prototyping
+* :white_check_mark: Execute TypeScript code (look at `src` directory)
+* :white_check_mark: Support TSLint (linter)
+* :white_check_mark: Disable some TSLint rules to quick prototyping
 
 ## Development
 
