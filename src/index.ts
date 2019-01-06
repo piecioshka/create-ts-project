@@ -13,4 +13,4 @@ function displayMovie(movie: IMovie) {
     console.log(movie.name);
 }
 
-displayMovie( random as IMovie );
+displayMovie(random as IMovie);

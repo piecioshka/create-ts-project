@@ -1,6 +1,6 @@
 # typescript-playground
 
-:hammer: TypeScript Playground with TSLint
+:hammer: TypeScript playground with TSLint
 
 ## Features
 
@@ -12,8 +12,8 @@
 
 ```bash
 npm install
-npm run test    # linting src/index.ts
-npm start       # execute src/index.ts
+npm run lint    # linting src/index.ts
+npm start       # execute src/index.ts with ts-node
 ```
 
 ## License
