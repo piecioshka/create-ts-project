@@ -1,7 +1,7 @@
 {
     "private": true,
     "name": "typescript-playground",
-    "description": "TypeScript playground with TSLint",
+    "description": "TypeScript playground",
     "version": "1.0.0",
     "license": "MIT",
     "author": {
@@ -13,13 +13,11 @@
         "clear": "rm -rf dist/",
         "clear:all": "rm -rf node_modules/ && npm run clear",
         "test": "echo not yet",
-        "lint": "tslint -c tslint.json 'src/**/*.ts'",
         "start": "ts-node src/index.ts"
     },
     "dependencies": {
-        "ts-node": "^8.1.0",
-        "tslint": "^5.16.0",
-        "typescript": "^3.4.5"
+        "ts-node": "^8.3.0",
+        "typescript": "^3.5.2"
     },
     "devDependencies": {},
     "repository": {
