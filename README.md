@@ -8,7 +8,11 @@
 ## Usage
 
 ```bash
-npm create ts-project
+npm create ts-project <name>
+
+# or
+
+npx create-ts-project <name>
 ```
 
 ## Development

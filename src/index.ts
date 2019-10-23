@@ -6,7 +6,7 @@ interface IMovie {
 // ----------------------------------------------
 
 const random = {
-    name: 'Green Book'
+    name: 'Example Movie Title'
 };
 
 function displayMovie(movie: IMovie) {
