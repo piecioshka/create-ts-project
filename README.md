@@ -19,7 +19,8 @@ npx create-ts-project <name>
 
 ```bash
 npm install
-npm start       # execute src/index.ts with ts-node
+npm start       # compile src/index.ts to dist/index.js and execute *.js file [node]
+npm run dev     # execute src/index.ts [ts-node]
 ```
 
 ## 🤝 Contributing
