@@ -33,6 +33,7 @@
         "url": "git@github.com:piecioshka/create-ts-project.git"
     },
     "files": [
+        "bin",
         "src",
         "LICENSE",
         "package.json",
