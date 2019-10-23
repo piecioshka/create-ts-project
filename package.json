@@ -47,5 +47,5 @@
         "project",
         "seed"
     ],
-    "bin": ""
+    "bin": "./bin/cli.js"
 }
