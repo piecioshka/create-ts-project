@@ -1,7 +1,7 @@
 {
     "private": true,
-    "name": "typescript-playground",
-    "description": "TypeScript playground",
+    "name": "create-ts-project",
+    "description": "",
     "version": "1.0.0",
     "license": "MIT",
     "author": {
@@ -16,12 +16,12 @@
         "start": "ts-node src/index.ts"
     },
     "dependencies": {
-        "ts-node": "^8.3.0",
-        "typescript": "^3.5.2"
+        "ts-node": "^8.4.1",
+        "typescript": "^3.6.4"
     },
     "devDependencies": {},
     "repository": {
         "type": "git",
-        "url": "git@github.com:piecioshka/typescript-playground.git"
+        "url": "git@github.com:piecioshka/create-ts-project.git"
     }
 }

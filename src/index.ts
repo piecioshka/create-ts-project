@@ -6,7 +6,7 @@ interface IMovie {
 // ----------------------------------------------
 
 const random = {
-    name: 'Fast & furious 9 (2020)'
+    name: 'Green Book'
 };
 
 function displayMovie(movie: IMovie) {

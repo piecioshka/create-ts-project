@@ -1,12 +1,12 @@
-# typescript-playground
+# create-ts-project
 
-[![dependencies](https://david-dm.org/piecioshka/typescript-playground.svg)](https://github.com/piecioshka/typescript-playground)
+:hammer: Create simple project with TypeScript support
 
-:hammer: TypeScript playground
+## Usage
 
-## Features
-
-* :white_check_mark: Execute TypeScript code (look at `src` directory)
+```bash
+npm create ts-project
+```
 
 ## Development
 
@@ -15,6 +15,24 @@ npm install
 npm start       # execute src/index.ts with ts-node
 ```
 
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br/>
+Feel free to check [issues page](https://github.com/piecioshka/create-ts-project/issues/).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## Related
+
+* [test-mocha-typescript](https://github.com/piecioshka/test-mocha-typescript)
+* [test-jasmine-typescript](https://github.com/piecioshka/test-jasmine-typescript)
+* [test-flowtype-vs-typescript](https://github.com/piecioshka/test-flowtype-vs-typescript)
+* [test-typescript-parcel](https://github.com/piecioshka/test-typescript-parcel)
+* [test-typescript-webpack](https://github.com/piecioshka/test-typescript-webpack)
+* [test-jest-typescript](https://github.com/piecioshka/test-jest-typescript)
+
 ## License
 
-[The MIT License](http://piecioshka.mit-license.org) @ 2018
+[The MIT License](http://piecioshka.mit-license.org) @ 2019
