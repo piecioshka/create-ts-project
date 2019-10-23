@@ -17,9 +17,15 @@
         "postversion": "git push --tags"
     },
     "dependencies": {
+        "@types/node": "^12.11.5",
+        "replace-in-files": "^2.0.3",
         "ts-node": "^8.4.1",
-        "typescript": "^3.6.4"
+        "typescript": "^3.6.4",
+        "yargs": "^14.2.0"
     },
+    "maintainers": [
+        "Piotr Kowalski <piecioshka@gmail.com> https://piecioshka.pl"
+    ],
     "devDependencies": {},
     "repository": {
         "type": "git",
@@ -39,5 +45,6 @@
         "simple",
         "project",
         "seed"
-    ]
+    ],
+    "bin": ""
 }
