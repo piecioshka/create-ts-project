@@ -13,7 +13,9 @@
         "clear": "rm -rf dist/",
         "clear:all": "rm -rf node_modules/ && npm run clear",
         "test": "echo not yet",
-        "start": "ts-node src/index.ts"
+        "start": "tsc && node dist/index.js",
+        "dev": "ts-node src/index.ts",
+        "postversion": "git push --tags"
     },
     "dependencies": {
         "ts-node": "^8.4.1",
@@ -23,5 +25,20 @@
     "repository": {
         "type": "git",
         "url": "git@github.com:piecioshka/create-ts-project.git"
-    }
+    },
+    "files": [
+        "src",
+        "LICENSE",
+        "package.json",
+        "README.md",
+        "tsconfig.json"
+    ],
+    "keywords": [
+        "typescript",
+        "playground",
+        "create",
+        "simple",
+        "project",
+        "seed"
+    ]
 }
