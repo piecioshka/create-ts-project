@@ -9,7 +9,7 @@ const ora = require('ora');
 const replaceInFiles = require('replace-in-files');
 
 const argv = yargs
-    .usage('create-ts-project\n\n  $ $0 <name>')
+    .usage('Usage\n\n  create-ts-project <name>')
     .epilog('Copyright @ 2019')
     .argv;
 
@@ -50,7 +50,7 @@ async function isFileExist(name) {
     try {
         const isDirectoryExist = await isFileExist(name);
         if (isDirectoryExist) {
-            throw new Error('Directory exist');
+            throw new Error(`Directory exist - ${name}`);
         }
         // Fetch github.com/piecioshka/create-ts-project
         await exec(`wget ${package} -O create-ts-project.zip`);

@@ -1,4 +1,4 @@
-interface IMovie {
+interface Movie {
     name: string;
     poster: string;
 }
@@ -9,8 +9,8 @@ const random = {
     name: 'Example Movie Title'
 };
 
-function displayMovie(movie: IMovie) {
+function displayMovie(movie: Movie) {
     console.log(movie.name);
 }
 
-displayMovie(random as IMovie);
+displayMovie(random as Movie);

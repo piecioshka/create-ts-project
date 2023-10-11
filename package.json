@@ -13,8 +13,7 @@
         "clear:all": "rm -rf node_modules/ && npm run clear",
         "test": "echo not yet",
         "start": "tsc && node dist/index.js",
-        "dev": "ts-node src/index.ts",
-        "postversion": "git push --tags"
+        "dev": "ts-node src/index.ts"
     },
     "dependencies": {
         "@types/node": "^12.11.5",
@@ -24,13 +23,13 @@
         "typescript": "^3.6.4",
         "yargs": "^14.2.0"
     },
-    "maintainers": [
-        "Piotr Kowalski <piecioshka@gmail.com> https://piecioshka.pl"
-    ],
     "devDependencies": {},
     "repository": {
         "type": "git",
         "url": "git@github.com:piecioshka/create-ts-project.git"
+    },
+    "engines": {
+        "node": ">=10"
     },
     "files": [
         "bin",
@@ -41,6 +40,7 @@
         "tsconfig.json"
     ],
     "keywords": [
+        "cli",
         "typescript",
         "playground",
         "create",
