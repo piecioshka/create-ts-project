@@ -1,6 +1,6 @@
 {
     "name": "create-ts-project",
-    "description": "",
+    "description": "Create a project with TypeScript support",
     "version": "1.0.5",
     "license": "MIT",
     "author": {
@@ -16,14 +16,12 @@
         "dev": "ts-node src/index.ts"
     },
     "dependencies": {
-        "@types/node": "^12.11.5",
-        "ora": "^4.0.2",
-        "replace-in-files": "^2.0.3",
-        "ts-node": "^8.4.1",
-        "typescript": "^3.6.4",
-        "yargs": "^14.2.0"
+        "@types/node": "^20.9.0",
+        "replace-in-files": "^3.0.0",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.2.2",
+        "yargs": "^17.7.2"
     },
-    "devDependencies": {},
     "repository": {
         "type": "git",
         "url": "git@github.com:piecioshka/create-ts-project.git"

@@ -1,20 +1,19 @@
 #!/usr/bin/env node
 
-const child_process = require('child_process');
-const util = require('util');
+const child_process = require("child_process");
+const util = require("util");
 const exec = util.promisify(child_process.exec);
 
-const yargs = require('yargs');
-const ora = require('ora');
-const replaceInFiles = require('replace-in-files');
+const yargs = require("yargs");
+const replaceInFiles = require("replace-in-files");
 
 const argv = yargs
-    .usage('Usage\n\n  create-ts-project <name>')
-    .epilog('Copyright @ 2019')
-    .argv;
+    .usage("Usage\n\n  create-ts-project <name>")
+    .epilog("Copyright @ 2019").argv;
 
 const name = argv._[0];
-const package = 'https://github.com/piecioshka/create-ts-project/archive/master.zip';
+const package =
+    "https://github.com/piecioshka/create-ts-project/archive/master.zip";
 
 if (!name) {
     yargs.showHelp();
@@ -29,11 +28,8 @@ const options = {
         `${name}/bin/cli.js`,
     ],
     from: /create-ts-project/g,
-    to: name
+    to: name,
 };
-
-const state = ora();
-state.start();
 
 async function isFileExist(name) {
     try {
@@ -45,25 +41,34 @@ async function isFileExist(name) {
     }
 }
 
+const log = (text) => console.info("[+] " + text);
+const fail = (text) => console.error("[-] " + text);
+
+function task(command) {
+    log("Command: " + command);
+    return exec(command);
+}
+
 (async () => {
-    state.info(`Create project: ${name}`);
+    log(`Create project: ${name}`);
     try {
         const isDirectoryExist = await isFileExist(name);
         if (isDirectoryExist) {
             throw new Error(`Directory exist - ${name}`);
         }
         // Fetch github.com/piecioshka/create-ts-project
-        await exec(`wget ${package} -O create-ts-project.zip`);
-        await exec(`unzip create-ts-project.zip`);
-        await exec(`mv create-ts-project-master ${name}`);
-        await exec(`rm -rf create-ts-project.zip`);
+        await task(`wget ${package} -O create-ts-project.zip`);
+        await task(`unzip create-ts-project.zip`);
+        await task(`mv create-ts-project-master ${name}`);
+        await task(`rm -rf create-ts-project.zip`);
         // Replace all "create-ts-project" by "NAME"
         await replaceInFiles(options);
         // Git setup & commit
-        await exec(`cd ${name} && git init && git add . && git commit -am "Generate project"`);
-        state.succeed('Project created');
-        state.stop();
+        await task(
+            `cd ${name} && git init && git add . && git commit -am "Generate project"`
+        );
+        log("Project created");
     } catch (reason) {
-        state.fail(`Project does not created properly: ${reason.message}`);
+        fail(`Project does not created properly: ${reason.message}`);
     }
 })();
