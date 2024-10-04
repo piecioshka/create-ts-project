@@ -1,6 +1,9 @@
 # create-ts-project
 
+[![node version](https://img.shields.io/node/v/create-ts-project.svg)](https://www.npmjs.com/package/create-ts-project)
 [![npm version](https://badge.fury.io/js/create-ts-project.svg)](https://badge.fury.io/js/create-ts-project)
+[![downloads count](https://img.shields.io/npm/dt/create-ts-project.svg)](https://www.npmjs.com/package/create-ts-project)
+[![license](https://img.shields.io/npm/l/create-ts-project.svg)](https://www.npmjs.com/package/create-ts-project)
 
 :hammer: Create a project with TypeScript support
 
