@@ -3,6 +3,6 @@ npm-debug.log
 
 tmp/
 coverage/
-dist/
 
+dist/
 !.vscode/
