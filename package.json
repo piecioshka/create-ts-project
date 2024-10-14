@@ -24,7 +24,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git@github.com:piecioshka/create-ts-project.git"
+        "url": "git+ssh://git@github.com/piecioshka/create-ts-project.git"
     },
     "engines": {
         "node": ">=10"
@@ -46,5 +46,7 @@
         "project",
         "seed"
     ],
-    "bin": "./bin/cli.js"
+    "bin": {
+        "create-ts-project": "bin/cli.js"
+    }
 }
