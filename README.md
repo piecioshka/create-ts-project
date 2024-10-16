@@ -5,7 +5,7 @@
 [![downloads count](https://img.shields.io/npm/dt/create-ts-project.svg)](https://www.npmjs.com/package/create-ts-project)
 [![license](https://img.shields.io/npm/l/create-ts-project.svg)](https://piecioshka.mit-license.org)
 
-:hammer: Create a project with TypeScript support
+🔨 Create a project with TypeScript support
 
 > Give a ⭐️ if this project helped you!
 
