@@ -17,12 +17,12 @@
     },
     "dependencies": {
         "replace-in-files": "^3.0.0",
-        "ts-node": "^10.9.1",
-        "typescript": "^5.2.2",
         "yargs": "^17.7.2"
     },
     "devDependencies": {
-        "@types/node": "^20.9.0"
+        "@types/node": "^22.9.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.6.3"
     },
     "repository": {
         "type": "git",
@@ -46,7 +46,12 @@
         "create",
         "simple",
         "project",
-        "seed"
+        "seed",
+        "starter",
+        "boilerplate",
+        "template",
+        "scaffold",
+        "generator"
     ],
     "bin": {
         "create-ts-project": "bin/cli.js"
