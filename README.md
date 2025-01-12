@@ -30,4 +30,4 @@ npm run dev     # execute src/index.ts [ts-node]
 
 ## License
 
-[The MIT License](https://piecioshka.mit-license.org) @ 2019-2023
+[The MIT License](https://piecioshka.mit-license.org) @ 2019
