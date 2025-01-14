@@ -1,5 +1,6 @@
 # create-ts-project
 
+[![cli-available](https://badgen.net/static/cli/available/?icon=terminal)](https://runkit.com/npm/create-ts-project)
 [![node version](https://img.shields.io/node/v/create-ts-project.svg)](https://www.npmjs.com/package/create-ts-project)
 [![npm version](https://badge.fury.io/js/create-ts-project.svg)](https://badge.fury.io/js/create-ts-project)
 [![downloads count](https://img.shields.io/npm/dt/create-ts-project.svg)](https://www.npmjs.com/package/create-ts-project)
@@ -10,6 +11,12 @@
 
 > Give a ⭐️ if this project helped you!
 
+## CLI
+
+```bash
+npm install -g create-ts-project
+```
+
 ## Usage
 
 ```bash
@@ -18,6 +25,10 @@ npm create ts-project <name>
 # or
 
 npx create-ts-project <name>
+
+# or
+
+create-ts-project <name>
 ```
 
 ## Development
