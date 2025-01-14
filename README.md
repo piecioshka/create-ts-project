@@ -13,11 +13,11 @@
 
 ## CLI
 
+Installation:
+
 ```bash
 npm install -g create-ts-project
 ```
-
-## Usage
 
 ```bash
 npm create ts-project <name>
@@ -29,14 +29,6 @@ npx create-ts-project <name>
 # or
 
 create-ts-project <name>
-```
-
-## Development
-
-```bash
-npm install
-npm start       # compile src/index.ts to dist/index.js and execute *.js file [node]
-npm run dev     # execute src/index.ts [ts-node]
 ```
 
 ## License
