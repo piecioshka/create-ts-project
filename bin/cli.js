@@ -14,7 +14,7 @@ const argv = yargs
 
 const name = argv._[0];
 const package =
-    "https://github.com/piecioshka/create-ts-project/archive/master.zip";
+    "https://github.com/piecioshka/create-ts-project/archive/main.zip";
 
 if (!name) {
     yargs.showHelp();
@@ -60,7 +60,7 @@ function task(command) {
         // Fetch github.com/piecioshka/create-ts-project
         await task(`wget ${package} -O create-ts-project.zip`);
         await task(`unzip create-ts-project.zip`);
-        await task(`mv create-ts-project-master ${name}`);
+        await task(`mv create-ts-project-main ${name}`);
         await task(`rm -rf create-ts-project.zip`);
         // Replace all "create-ts-project" by "NAME"
         await replaceInFiles(options);
