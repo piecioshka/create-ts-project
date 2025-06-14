@@ -8,13 +8,14 @@ const colors = {
   cyan: '\x1b[36m',
   white: '\x1b[37m',
   gray: '\x1b[90m',
+  brown: '\x1b[38;5;94m',
   brightRed: '\x1b[91m',
   brightGreen: '\x1b[92m',
   brightYellow: '\x1b[93m',
   brightBlue: '\x1b[94m',
   brightMagenta: '\x1b[95m',
   brightCyan: '\x1b[96m',
-  brightWhite: '\x1b[97m'
+  brightWhite: '\x1b[97m',
 };
 
 const creator = (color) => (value) => `${color}${value}${colors.reset}`;
@@ -28,6 +29,7 @@ module.exports = {
   cyan: creator(colors.cyan),
   white: creator(colors.white),
   gray: creator(colors.gray),
+  brown: creator(colors.brown),
   brightRed: creator(colors.brightRed),
   brightGreen: creator(colors.brightGreen),
   brightYellow: creator(colors.brightYellow),
