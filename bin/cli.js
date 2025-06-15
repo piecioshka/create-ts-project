@@ -6,7 +6,6 @@ const exec = util.promisify(child_process.exec);
 
 const yargs = require("yargs");
 const replaceInFiles = require("replace-in-files");
-const { green } = require("./__colors");
 
 const argv = yargs
   .usage("Usage\n\n  create-ts-project <name>")
@@ -68,7 +67,7 @@ function task(command) {
     await task(
       `cd ${name} && git init && git add . && git commit -am "Generate project"`
     );
-    log(green("Project created successfully!"));
+    log("Project created successfully!");
   } catch (reason) {
     fail(`Project does not created properly: ${reason.message}`);
   }
