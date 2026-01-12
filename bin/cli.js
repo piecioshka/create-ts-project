@@ -2,24 +2,33 @@
 
 const child_process = require("child_process");
 const util = require("util");
-const exec = util.promisify(child_process.exec);
-
 const minimist = require("minimist");
 const replaceInFiles = require("replace-in-files");
+const pkg = require("../package.json");
 
+const exec = util.promisify(child_process.exec);
 const argv = minimist(process.argv.slice(2));
 
 const name = argv._[0];
-const package =
+const archiveUrl =
   "https://github.com/piecioshka/create-ts-project/archive/main.zip";
 
-if (argv.help || argv.h) {
+function help() {
   console.log("Usage\n\n  create-ts-project <name>\n\nCopyright @ 2019");
+}
+
+if (argv.version || argv.v) {
+  console.log(pkg.version);
+  process.exit(0);
+}
+
+if (argv.help || argv.h) {
+  help();
   process.exit(0);
 }
 
 if (!name) {
-  console.log("Usage\n\n  create-ts-project <name>\n\nCopyright @ 2019");
+  help();
   process.exit(1);
 }
 
@@ -60,7 +69,7 @@ function task(command) {
       throw new Error(`Directory exist - ${name}`);
     }
     // Fetch github.com/piecioshka/create-ts-project
-    await task(`wget ${package} -O create-ts-project.zip`);
+    await task(`wget ${archiveUrl} -O create-ts-project.zip`);
     await task(`unzip create-ts-project.zip`);
     await task(`mv create-ts-project-main ${name}`);
     await task(`rm -rf create-ts-project.zip`);
