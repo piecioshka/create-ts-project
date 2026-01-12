@@ -4,19 +4,22 @@ const child_process = require("child_process");
 const util = require("util");
 const exec = util.promisify(child_process.exec);
 
-const yargs = require("yargs");
+const minimist = require("minimist");
 const replaceInFiles = require("replace-in-files");
 
-const argv = yargs
-  .usage("Usage\n\n  create-ts-project <name>")
-  .epilog("Copyright @ 2019").argv;
+const argv = minimist(process.argv.slice(2));
 
 const name = argv._[0];
 const package =
   "https://github.com/piecioshka/create-ts-project/archive/main.zip";
 
+if (argv.help || argv.h) {
+  console.log("Usage\n\n  create-ts-project <name>\n\nCopyright @ 2019");
+  process.exit(0);
+}
+
 if (!name) {
-  yargs.showHelp();
+  console.log("Usage\n\n  create-ts-project <name>\n\nCopyright @ 2019");
   process.exit(1);
 }
 
