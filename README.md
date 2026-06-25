@@ -9,6 +9,8 @@
 
 🔨 Create a project with TypeScript support
 
+![](demo/create-ts-project.gif)
+
 > Give a ⭐️ if this project helped you!
 
 ## CLI
