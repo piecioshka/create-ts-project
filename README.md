@@ -6,6 +6,7 @@
 [![downloads count](https://img.shields.io/npm/dt/create-ts-project.svg)](https://www.npmjs.com/package/create-ts-project)
 [![size](https://packagephobia.com/badge?p=create-ts-project)](https://packagephobia.com/result?p=create-ts-project)
 [![license](https://img.shields.io/npm/l/create-ts-project.svg)](https://piecioshka.mit-license.org)
+![typescript](https://img.shields.io/badge/built%20with-TypeScript-3178c6.svg)
 
 🔨 Create a project with TypeScript support
 
