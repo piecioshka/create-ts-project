@@ -29,7 +29,7 @@
     "url": "git+ssh://git@github.com/piecioshka/create-ts-project.git"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=20"
   },
   "files": [
     "bin",
